@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafeteria</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cafeteria</h1>
+    </header>
 
+    <div class="main-content">
+      <div class="menu-section">
+        <h2>Cardápio</h2>
+        <div class="menu-items" id="menuItems">
+        </div>
+      </div>
+
+      <div class="order-section">
+        <h2>Pedido Atual</h2>
+        <div class="order-items" id="orderItems">
+          <p class="empty-message">Nenhum item adicionado</p>
+        </div>
+
+        <div class="order-total">
+          <h3>Total: R$ <span id="totalAmount">0,00</span></h3>
+        </div>
+
+        <div class="order-actions">
+          <button class="btn btn-clear" id="limparPedido">Limpar Pedido</button>
+          <button class="btn btn-save" id="salvarPedido">Salvar Pedido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
